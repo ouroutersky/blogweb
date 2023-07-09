@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sistem Blog</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+  <h1>Sistem Blog</h1>
+
+  <div id="blog-form">
+    <h2>Tambah Blog Baru</h2>
+    <form id="new-blog-form">
+      <label for="title">Judul:</label>
+      <input type="text" id="title" name="title" required>
+      
+      <label for="content">Isi:</label>
+      <textarea id="content" name="content" required></textarea>
+      
+      <label for="author">Penulis:</label>
+      <input type="text" id="author" name="author" required>
+      
+      <button type="submit">Post</button>
+    </form>
+  </div>
+  <div id="profile">
+    <div id="profile-info">
+      <div id="profile-details">
+        <h3 id="profile-name"></h3>
+        <p id="profile-email"></p>
+        <p id="profile-description"></p>
+      </div>
+    </div>
+  
+    <div id="profile-form">
+      <h2>Update Profile</h2>
+      <form id="update-profile-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <button type="submit">Save</button>
+      </form>
+    </div>
+  </div>
+  
+    </div>
+  </div>
+  
+
+  <div id="blog-list">
+    <h2>Semua Blog</h2>
+    <ul id="blogs">
+      <!-- List of blogs will be dynamically added here -->
+    </ul>
+  </div>
+
+  <div id="edit-blog-modal" class="modal">
+    <div class="modal-content">
+      <h2>Edit Blog</h2>
+      <form id="edit-blog-form">
+        <label for="updated-title">Judul:</label>
+        <input type="text" id="updated-title" name="updated-title" required>
+        
+        <label for="updated-content">Isi:</label>
+        <textarea id="updated-content" name="updated-content" required></textarea>
+        
+        <label for="updated-author">Penulis:</label>
+        <input type="text" id="updated-author" name="updated-author" required>
+        
+        <button type="submit">Simpan Perubahan</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -42,7 +42,7 @@ function fillProfile(name, email, description) {
     var name = document.getElementById('name').value;
     var email = document.getElementById('email').value;
   
-    fillProfile(name, email, 'Deskripsi diri orang tersebut.');
+    fillProfile(name, email,);
   
     // Simpan data profil pengguna ke penyimpanan (misalnya database)
     // ...
